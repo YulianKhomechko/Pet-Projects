@@ -1,0 +1,42 @@
+.container {
+    min-width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    @media screen and (min-width: 768px) {
+        padding: 1rem 2rem;
+    }
+}
+
+.department-list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+    }
+
+    & > * {
+        flex-grow: 1;
+        @media screen and (min-width: 1024px) {
+            flex-grow: 0;
+            flex-basis: 50%;
+        }
+        @media screen and (min-width: 1550px) {
+            flex-basis: 33%;
+        }
+    }
+}

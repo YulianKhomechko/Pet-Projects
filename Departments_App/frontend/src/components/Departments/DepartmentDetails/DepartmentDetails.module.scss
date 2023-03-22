@@ -1,0 +1,42 @@
+@import '../../../scss/variables';
+
+.department-details {
+    position: relative;
+
+    .departments-button {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__name {
+        font-size: 1.75rem;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+        line-height: 1.3;
+        text-transform: uppercase;
+    }
+
+    &__head {
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: $grey-dark;
+        margin-bottom: 1rem;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        margin-top: 2rem;
+        font-size: 1.75rem;
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../../scss/variables';
+
+.employee-list {
+    &__header {
+        margin-bottom: 1rem;
+
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+        .department-name {
+            text-transform: uppercase;
+        }
+    }
+
+    .nav-buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .employees {
+        position: relative;
+        margin-top: 2rem;
+        width: 100%;
+
+        thead {
+            border-bottom: 1px solid $grey;
+        }
+
+        th {
+            color: $grey-dark;
+            padding: 0.5rem 1rem;
+
+            &:not(:last-child) {
+                border-right: 1px solid $grey;
+            }
+        }
+    }
+}

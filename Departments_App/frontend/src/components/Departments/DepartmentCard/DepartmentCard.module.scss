@@ -1,0 +1,75 @@
+@import '../../../scss/variables';
+
+.wrapper {
+    padding: 1rem;
+    display: flex;
+}
+
+.department-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 2rem;
+    border: 1px solid $grey;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px $grey;
+
+    @media screen and (min-width: 640px) {
+        flex-direction: row;
+    }
+    @media screen and (min-width: 1024px) {
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+    }
+    @media screen and (min-width: 1550px) {
+        flex-direction: column;
+    }
+
+    &__content {
+        flex-grow: 1;
+    }
+
+    &__name {
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    &__head {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        color: $grey-dark;
+    }
+
+    &__description {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+
+        flex-grow: 1;
+        overflow: hidden;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        @media screen and (min-width: 640px) {
+            flex-direction: column;
+        }
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+        }
+        @media screen and (min-width: 1280px) {
+            flex-direction: column;
+        }
+        @media screen and (min-width: 1550px) {
+            flex-direction: row;
+        }
+    }
+}

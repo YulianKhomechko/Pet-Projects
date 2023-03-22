@@ -1,0 +1,16 @@
+{
+    "env": {
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": ["eslint:recommended"],
+    "rules": {
+        "no-console": "error",
+        "object-curly-spacing": ["error", "always"],
+        "no-unused-vars": "warn",
+        "no-undef": "warn",
+        "no-useless-escape": "off",
+        "quotes": "warn",
+        "no-duplicate-imports": "warn"
+    }
+}

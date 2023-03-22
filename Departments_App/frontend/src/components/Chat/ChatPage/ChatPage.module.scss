@@ -1,0 +1,9 @@
+.chat-page--height {
+    @media screen and (min-width: 1280px) {
+        max-height: calc(100vh - 97px);
+    }
+
+    @media screen and (max-width: 1280px) {
+        max-height: calc(100vh - 82px);
+    }
+}

@@ -1,0 +1,78 @@
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    border: 1px solid $grey;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        font-size: 1.75rem;
+    }
+
+    .required {
+        color: red;
+    }
+
+    .error-message {
+        color: $red;
+        margin-top: -0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 600px;
+        padding: 2rem 3rem;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 800px;
+    }
+
+    .label {
+        display: block;
+        margin-bottom: 0.25rem;
+        font-weight: 500;
+    }
+
+    .input {
+        height: 2.5rem;
+    }
+
+    .textarea {
+        min-height: 300px;
+    }
+
+    .input,
+    .textarea {
+        min-width: 300px;
+        width: 100%;
+
+        border: 1px solid $grey;
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+
+        margin-bottom: 0.5rem;
+    }
+
+    .input.error,
+    .textarea.error {
+        &:not(:focus) {
+            outline: 1px solid $red;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        & > *:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}

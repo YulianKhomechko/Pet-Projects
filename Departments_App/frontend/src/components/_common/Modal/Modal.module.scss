@@ -1,0 +1,50 @@
+@import '/src/scss/variables';
+
+.content {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border: 1px solid $grey;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 0.5rem 1rem $grey;
+
+    transform: translateX(100%);
+    transition: all 0.4s;
+    opacity: 0;
+
+    &.show-modal {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding: 2rem 4rem;
+    }
+
+    .close {
+        align-self: flex-end;
+    }
+
+    .title {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+    }
+
+    .text {
+        flex-grow: 1;
+        overflow: auto;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+}

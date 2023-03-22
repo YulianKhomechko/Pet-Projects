@@ -1,0 +1,37 @@
+.details-container {
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    width: 100%;
+    min-height: 100vh;
+
+    @media screen and (min-width: 1280px) {
+        min-height: auto;
+        margin: 4rem auto;
+        border: 1px solid $grey;
+        border-radius: 0.5rem;
+        padding: 2rem 4rem;
+        max-width: 1024px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        max-width: 1280px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        max-width: 1440px;
+    }
+}
+
+.centered {
+    margin: 3rem auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.hidden {
+    display: none;
+}
